@@ -9,6 +9,12 @@ http-equiv="X-UA-Compatible">
 function closeFrame() {
     document.getElementById("outerdiv").style.display="none";
 }
+
+function enableBot(){
+    document.getElementById("bot").style.visibility = 'visible';
+	document.getElementById("help").style.visibility = 'hidden';
+	
+}
 </script>
 
 <style> 
@@ -1036,6 +1042,7 @@ class="hide" for="p2CTA"></LABEL>			 <BUTTON title="Learn more" class="nblue-btn
 id="p2CTA">Learn more</BUTTON>		 </DIV></DIV></DIV>
 <DIV class="column" id="marketing-3">
 <DIV class="vertical-divider"></DIV>
+
 <DIV class="offer-container">
 <DIV class="offer-img"><IMG title="Use American Express with Apple Pay" alt="Use American Express with Apple Pay" 
 src="Amex_files/UKHP_CM_promo_3.png">		 </DIV>
@@ -1046,6 +1053,7 @@ class="txt">Use American Express with Apple Pay</SPAN><SPAN
 class="arrow"></SPAN></A></P><LABEL class="hide" for="p3CTA"></LABEL>			 <BUTTON 
 title="View all Cards" class="nblue-btn" id="p3CTA">View all Cards</BUTTON>
 		 </DIV></DIV></DIV>
+<img id="help" src = "help.png" onclick="enableBot()" style="width: 150px;height:100px;position:fixed"/>		 
 <P class="terms">*Offer Terms and Conditions apply. To find out more please 
 click on the individual offer.</P></DIV></DIV></DIV></DIV></DIV>
 <DIV id="js-fallback">
@@ -1245,9 +1253,9 @@ Services</SPAN>
 <P class="iNavCopy_Amex">Copyright © 2016 <A title="" href="https://www.americanexpress.com/uk/">American 
 Express Company</A></P></DIV></DIV>
 <DIV id="iNavObjects"></DIV>
-<div id="outerdiv" style="top: 160px; left: 0px;">
+<div id="outerdiv" style="top: 160px;text-align:right;padding-right:359px;">
 <a href="javascript:closeFrame();">[X]</a>
-    <iframe src="https://webchat.botframework.com/embed/BankerBot?s=xaVcp_SaoO8.cwA.C4Q.xDdgRf4LrSb98msmGeT02PZIvYRunEY8JlSl-Dhmyi0" style="height:71%;width:24.5%;position:absolute;top:200px;background:white;z-index:100;position:fixed">
+    <iframe id="bot" src="https://webchat.botframework.com/embed/BankerBot?s=xaVcp_SaoO8.cwA.C4Q.xDdgRf4LrSb98msmGeT02PZIvYRunEY8JlSl-Dhmyi0" style=" visibility:hidden; height:71%;width:24.5%;top:200px;background:white;z-index:100;position:fixed">
 	</iframe>
   
      </div>
